@@ -11,18 +11,21 @@ public class Notes {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int ID;
 	private String notes;
+
 	public int getID() {
 		return ID;
 	}
+
 	public void setID(int iD) {
 		ID = iD;
 	}
+
 	public String getNotes() {
 		return notes;
 	}
+
 	public void setNotes(String notes) {
 		this.notes = notes;
 	}
-	
-	
+
 }
