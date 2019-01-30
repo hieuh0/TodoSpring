@@ -9,15 +9,15 @@ import javax.persistence.Id;
 public class Notes {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int ID;
+	private int id;
 	private String notes;
 
 	public int getID() {
-		return ID;
+		return id;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(int id) {
+		id = id;
 	}
 
 	public String getNotes() {
@@ -28,4 +28,9 @@ public class Notes {
 		this.notes = notes;
 	}
 
+	@Override
+	public String toString() {
+		return "Notes [ID=" + id + ", notes=" + notes + "]";
+	}
+	
 }
